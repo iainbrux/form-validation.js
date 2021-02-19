@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation | iainbrux</title>
+</head>
+
+<body>
+    <form novalidate>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required> <!-- Validate email -->
+        <label for="country">Country:</label>
+        <input type="text" name="country" id="country"> <!-- Dropdown list of countries? -->
+        <label for="postal-code">Postal Code:</label>
+        <input type="text" name="postal-code" id="postal-code" pattern="[aA-zZ][aA-zZ]\d{1,}[aA-zZ]?\s?\d[aA-zZ][aA-zZ]"> <!-- Validate with regex -->
+        <label for="create-password">Create a password:</label>
+        <input type="password" name="create-password" id="create-password" minlength="8" maxlength="30"> <!-- Min length etc -->
+        <label for="confirm-password">Confirm password:</label>
+        <input type="password" name="confirm-password" id="confirm-password"> <!-- Must match -->
+        <label for="submit"></label>
+        <input type="submit" value="Submit">
+    </form>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+
+</html>
