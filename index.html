@@ -12,8 +12,8 @@
     <div class="user-input">
         <form>
             <label for="email" class="input-title">Email:</label>
-            <input type="email" name="email" id="email" required> <!-- Validate email -->
-            <label for="country" class="input-title">Region:</label>
+            <input type="email" name="email" id="email" required>
+            <!-- <label for="country" class="input-title">Region:</label>
             <select id="country" name="country" class="form-control">
                 <option value="africa">Africa</option>
                 <option value="antarctica">Antarctica</option>
@@ -22,7 +22,7 @@
                 <option value="north america">North America</option>
                 <option value="oceania">Oceania</option>
                 <option value="south america">South America</option>
-            </select> <!-- Dropdown list of countries? -->
+            </select> -->
             <label for="postal-code" class="input-title">Postal Code:</label>
             <input type="text" name="postal-code" id="postal-code"
                 pattern="[aA-zZ][aA-zZ]\d{1,}[aA-zZ]?\s?\d[aA-zZ][aA-zZ]" required> <!-- Validate with regex -->
@@ -30,9 +30,9 @@
             <input type="password" name="create-password" id="create-password" minlength="7" maxlength="30" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
             <!-- Min length etc -->
             <label for="confirm-password" class="input-title">Confirm password:</label>
-            <input type="password" name="confirm-password" id="confirm-password" required> <!-- Must match -->
+            <input type="password" name="confirm-password" id="confirm-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required> <!-- Must match -->
             <label for="submit"></label>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submit">
         </form>
     </div>
     <link rel="preconnect" href="https://fonts.gstatic.com">
