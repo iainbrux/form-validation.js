@@ -1,8 +1,79 @@
-body {
-    width: 150px;
+html {
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/dark-honeycomb.png");
+    height: 100%;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-form {
-    display: block;
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.user-input {
+    align-items: center;
+    justify-content: center;
+    width: 400px;
     text-align: center;
+    background: linear-gradient(#e66465, #9198e5);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.input-title {
+    font-size: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+select {
+    width: 325px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input:active,
+input:focus,
+select:active,
+select:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 200px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input:invalid,
+select:invalid {
+    color: red;
+    border-color: red;
+}
+
+input:valid,
+select:valid {
+    color: limegreen;
+    border-color: limegreen;
 }
